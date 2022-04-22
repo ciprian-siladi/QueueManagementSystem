@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="queuemanagement.controller.Controller">
+   <children>
+      <Label layoutX="264.0" layoutY="67.0" text="Time limit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="98.0" text="Number of clients">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="132.0" text="Number of queues">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="169.0" text="Arrival Time">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="170.0" text="Min -&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="212.0" text="Service Time">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="254.0" text="Strategy selection">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeLimitTF" layoutX="418.0" layoutY="67.0" prefHeight="26.0" prefWidth="159.0" />
+      <TextField fx:id="nrClientsTF" layoutX="418.0" layoutY="98.0" prefHeight="26.0" prefWidth="159.0" />
+      <TextField fx:id="nrQueuesTF" layoutX="418.0" layoutY="132.0" prefHeight="26.0" prefWidth="159.0" />
+      <TextField fx:id="minArrivalTimeTF" layoutX="288.0" layoutY="169.0" prefHeight="26.0" prefWidth="159.0" />
+      <TextField fx:id="maxArrivalTimeTF" layoutX="519.0" layoutY="169.0" prefHeight="26.0" prefWidth="159.0" />
+      <TextField fx:id="minServiceTimeTF" layoutX="291.0" layoutY="212.0" prefHeight="26.0" prefWidth="159.0" />
+      <TextField fx:id="maxServiceTimeTF" layoutX="519.0" layoutY="211.0" prefHeight="26.0" prefWidth="159.0" />
+      <ChoiceBox fx:id="strategyChoiceBox" layoutX="293.0" layoutY="254.0" prefHeight="26.0" prefWidth="159.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Shortest Time" />
+               <String fx:value="Shortest Queue" />
+            </FXCollections></items>
+      </ChoiceBox>
+      <Label layoutX="459.0" layoutY="169.0" text="Max -&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="212.0" text="Min -&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="212.0" text="Max -&gt;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="resultTextArea" layoutX="34.0" layoutY="401.0" prefHeight="166.0" prefWidth="490.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Button fx:id="startButton" layoutX="153.0" layoutY="313.0" mnemonicParsing="false" onAction="#startSimulation" text="Start simulation" />
+      <Button fx:id="stopButton" layoutX="583.0" layoutY="313.0" mnemonicParsing="false" onAction="#stopSimulation" text="Stop simulation" />
+      <Label fx:id="timeLabel" layoutX="400.0" layoutY="350.0" text="TIME">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="14.0" text="Queue Management System">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="outputFileTF" layoutX="613.0" layoutY="254.0" prefHeight="26.0" prefWidth="159.0" />
+      <Label layoutX="524.0" layoutY="254.0" text="Output file">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="avgServiceTime" layoutX="541.0" layoutY="401.0" text="Average service time">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="avgWaitingTime" layoutX="539.0" layoutY="453.0" text="Average waiting time">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="peakHour" layoutX="541.0" layoutY="502.0" text="Peak hour">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+
+
+   </children>
+</AnchorPane>

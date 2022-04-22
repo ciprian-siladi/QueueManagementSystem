@@ -1,0 +1,104 @@
+TIME 1
+Waiting clients [(4,2,2)id, (6,2,4)id, (7,2,2)id, (3,3,4)id, (9,3,2)id, (10,4,2)id, (1,5,2)id, (2,5,3)id, (8,5,2)id, (5,6,4)id]
+Queue 1: closed
+Queue 2: closed
+
+TIME 2
+Waiting clients [(3,3,4)id, (9,3,2)id, (10,4,2)id, (1,5,2)id, (2,5,3)id, (8,5,2)id, (5,6,4)id]
+Queue 1, waiting period = 4: [(4,2,2)id, (7,2,2)id]
+Queue 2, waiting period = 4: [(6,2,4)id]
+
+TIME 3
+Waiting clients [(10,4,2)id, (1,5,2)id, (2,5,3)id, (8,5,2)id, (5,6,4)id]
+Queue 1, waiting period = 7: [(4,2,1)id, (7,2,2)id, (3,3,4)id]
+Queue 2, waiting period = 5: [(6,2,3)id, (9,3,2)id]
+
+TIME 4
+Waiting clients [(1,5,2)id, (2,5,3)id, (8,5,2)id, (5,6,4)id]
+Queue 1, waiting period = 6: [(7,2,2)id, (3,3,4)id]
+Queue 2, waiting period = 6: [(6,2,2)id, (9,3,2)id, (10,4,2)id]
+
+TIME 5
+Waiting clients [(5,6,4)id]
+Queue 1, waiting period = 9: [(7,2,1)id, (3,3,4)id, (1,5,2)id, (8,5,2)id]
+Queue 2, waiting period = 8: [(6,2,1)id, (9,3,2)id, (10,4,2)id, (2,5,3)id]
+
+TIME 6
+There are no clients waiting.
+Queue 1, waiting period = 8: [(3,3,4)id, (1,5,2)id, (8,5,2)id]
+Queue 2, waiting period = 11: [(9,3,2)id, (10,4,2)id, (2,5,3)id, (5,6,4)id]
+
+TIME 7
+There are no clients waiting.
+Queue 1, waiting period = 7: [(3,3,3)id, (1,5,2)id, (8,5,2)id]
+Queue 2, waiting period = 10: [(9,3,1)id, (10,4,2)id, (2,5,3)id, (5,6,4)id]
+
+TIME 8
+There are no clients waiting.
+Queue 1, waiting period = 6: [(3,3,2)id, (1,5,2)id, (8,5,2)id]
+Queue 2, waiting period = 9: [(10,4,2)id, (2,5,3)id, (5,6,4)id]
+
+TIME 9
+There are no clients waiting.
+Queue 1, waiting period = 5: [(3,3,1)id, (1,5,2)id, (8,5,2)id]
+Queue 2, waiting period = 8: [(10,4,1)id, (2,5,3)id, (5,6,4)id]
+
+TIME 10
+There are no clients waiting.
+Queue 1, waiting period = 4: [(1,5,2)id, (8,5,2)id]
+Queue 2, waiting period = 7: [(2,5,3)id, (5,6,4)id]
+
+TIME 11
+There are no clients waiting.
+Queue 1, waiting period = 3: [(1,5,1)id, (8,5,2)id]
+Queue 2, waiting period = 6: [(2,5,2)id, (5,6,4)id]
+
+TIME 12
+There are no clients waiting.
+Queue 1, waiting period = 2: [(8,5,2)id]
+Queue 2, waiting period = 5: [(2,5,1)id, (5,6,4)id]
+
+TIME 13
+There are no clients waiting.
+Queue 1, waiting period = 1: [(8,5,1)id]
+Queue 2, waiting period = 4: [(5,6,4)id]
+
+TIME 14
+There are no clients waiting.
+Queue 1: closed
+Queue 2, waiting period = 3: [(5,6,3)id]
+
+TIME 15
+There are no clients waiting.
+Queue 1: closed
+Queue 2, waiting period = 2: [(5,6,2)id]
+
+TIME 16
+There are no clients waiting.
+Queue 1: closed
+Queue 2, waiting period = 1: [(5,6,1)id]
+
+TIME 17
+There are no clients waiting.
+Queue 1: closed
+Queue 2: closed
+
+TIME 18
+There are no clients waiting.
+Queue 1: closed
+Queue 2: closed
+
+TIME 19
+There are no clients waiting.
+Queue 1: closed
+Queue 2: closed
+
+TIME 20
+There are no clients waiting.
+Queue 1: closed
+Queue 2: closed
+
+Average service time: 2.7
+Average waiting time: 5.3
+Peak hour: 5
+Program finished!
